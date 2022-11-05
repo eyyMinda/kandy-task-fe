@@ -1,6 +1,6 @@
 ## Task:
 
--- Suprogramuoti "CodePen" aplinkoje prototipe pavaizduotą vaizdą. Suprogramuotas darbas turi būti pritaikytas visų įrenginių ekranams, skirtingoms naršyklėms (Google Chrome, Safari, Mozilla Firefox ir t.t.).
+Suprogramuoti "CodePen" aplinkoje prototipe pavaizduotą vaizdą. Suprogramuotas darbas turi būti pritaikytas visų įrenginių ekranams, skirtingoms naršyklėms (Google Chrome, Safari, Mozilla Firefox ir t.t.).
 
 
 
