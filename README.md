@@ -21,3 +21,5 @@ Code a website based on prototypes. The website must be adapted for all devices,
 - Button "Grab Mine" for buying can be left not functional.
 - Files are in "Assets.zip".
 - Use "CodePen" (https://codepen.io/)
+
+How long it took to finish? ## 2 Days
