@@ -1,6 +1,6 @@
 ## Task:
 
-Code a website based on prototypes. The website must be adapted for all the devices, different web browsers (Google Chrome, Safari, Mozilla Firefox, etc.)
+Code a website based on prototypes. The website must be adapted for all devices, different web browsers (Google Chrome, Safari, Mozilla Firefox, etc.)
 
 ## Prototypes (Working):
 
