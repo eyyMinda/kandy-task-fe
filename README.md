@@ -22,4 +22,4 @@ Code a website based on prototypes. The website must be adapted for all devices,
 - Files are in "Assets.zip".
 - Use "CodePen" (https://codepen.io/)
 
-How long it took to finish? ## 2 Days
+How long it took to finish? 2 Days.
