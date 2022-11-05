@@ -1,28 +1,23 @@
 ## Task:
 
-Suprogramuoti "CodePen" aplinkoje prototipe pavaizduotą vaizdą. Suprogramuotas darbas turi būti pritaikytas visų įrenginių ekranams, skirtingoms naršyklėms (Google Chrome, Safari, Mozilla Firefox ir t.t.).
+Code a website based on prototypes. The website must be adapted for all the devices, different web browsers (Google Chrome, Safari, Mozilla Firefox, etc.)
 
-
-
-## Prototipai (Veikiantys):
+## Prototypes (Working):
 
 [Desktop](https://xd.adobe.com/view/71aa4c0a-e981-467c-8520-344513801d0f-24f9/)
 
 [Mobile](https://xd.adobe.com/view/1fc48004-d069-4cfc-a9e8-c3c8baa5e099-4a97/)
 
+## Requirements:
 
+- Individual workspace layout.
+- Working nav links.
+- Adaptive design for difference devices.
+- Use global variables with .css.
+- Commenting.
 
-## Reikalavimai:
+## Notes:
 
-- Savarankiška darbo struktūra.
-- Veikiantis informacinių skilčių pasirinkimas.
-- Adaptyvus dizainas įvairiems įrenginiams.
-- Globalių kintamųjų naudojimas, aprašant stilių .css skiltyje.
-- Komentavimas.
-
-## Pastabos:
-
-- Pirkimo "Grab Mine" mygtukas gali neveikti.
-- Failai prisegami “Assets.zip” papkėje.
-- Naudojama "CodePen" aplinka: (https://codepen.io/)
-- Baigtą darbą atsiųsti su išsaugota "CodePen".io nuoroda.
+- Button "Grab Mine" for buying can be left not functional.
+- Files are in "Assets.zip".
+- Use "CodePen" (https://codepen.io/)
