@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.0/css/all.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="./tabs.js"></script>
+  <title>nerdwax</title>
+</head>
+
+<body>
+  <header>
+    <img src="https://i.imgur.com/vvTUdU8.jpg" alt="Nerdwax logo">
+  </header>
+  <main class="container">
+    <article class="row landing">
+
+      <section id="landingLeft" class="landing_left">
+        <img src="https://i.imgur.com/mXsTtLj.png" alt="Nerdwax kit">
+      </section>
+
+      <section id="landingRight" class="landing_right">
+        <div id="landingDescription" class="landing_right__description">
+          <div class="rating-stars"><i class="fa-solid fa-star fa-2xs"></i><i class="fa-solid fa-star fa-2xs"></i><i
+              class="fa-solid fa-star fa-2xs"></i><i class="fa-solid fa-star fa-2xs"></i><i
+              class="fa-solid fa-star-half-stroke fa-2xs"></i>
+            <span class="tiny-text">More than 50k happy customers</span>
+          </div>
+          <h1 class="section-title">nerdwax cleaning kit bundle</h1>
+          <ul class="list">
+            <li><i class="fa-regular fa-circle-check fa-lg"></i>Magical clean for your sunnies, specs, and screens!</li>
+            <li><i class="fa-regular fa-circle-check fa-lg"></i>Organic Ingredients specially formulated to keep your
+              glasses in
+              place while you live your life.</li>
+            <li><i class="fa-regular fa-circle-check fa-lg"></i>Create a layer of friction between your glasses and your
+              skin.
+            </li>
+            <li><i class="fa-regular fa-circle-check fa-lg"></i>Microfiber cloths are made from recycled plastic water
+              bottles.
+            </li>
+          </ul>
+        </div>
+
+        <h2>inside the bundle:</h2>
+        <ul class="list">
+          <li><i class="fa-regular fa-circle-1 fa-lg"></i>Nerdwax slimline single <b>($10)</b></li>
+          <li><i class="fa-regular fa-circle-2 fa-lg"></i>Magic drops refill <b>($7)</b></li>
+          <li><i class="fa-regular fa-circle-3 fa-lg"></i>Magic drops <b>($8)</b></li>
+          <li><i class="fa-regular fa-circle-4 fa-lg"></i>Clip-a-cloth <b>($2)</b></li>
+          <li><i class="fa-regular fa-circle-5 fa-lg"></i>
+            <div>Tardis Herringbone - secretly nerdy
+              cleaning cloth <b>($15)</b></div>
+          </li>
+        </ul>
+        <hr />
+        <div class="price">Only: <span class="line-through">$42.00</span> <span class="discounted">$30.00</span>
+          <div class="tiny-text">+ free international shipping</div>
+        </div>
+        <button type="button" class="btn">grab mine</button>
+      </section>
+    </article>
+
+    <article class="row preview">
+      <h1 class="section-title">more detailed look inside</h1>
+      <hr />
+      <nav class="dropdownNav" onclick="toggleMenu(this)">
+        <i class="fa-regular fa-circle-arrow-down fa-lg"></i>
+        <ul class="preview__nav" id="preview__nav">
+          <li data-index="0" onclick="switchTab(this)" class="active">nerdwax slimline single</li>
+          <li data-index="1" onclick="switchTab(this)">magic drops + refill</li>
+          <li data-index="2" onclick="switchTab(this)">clip-a-cloth</li>
+          <li data-index="3" onclick="switchTab(this)">tardis herringbone - secretly nerdy cleaning cloth</li>
+        </ul>
+      </nav>
+      <section class="preview__section" data-status="active">
+        <div class="preview-section-img img1"></div>
+        <div class="preview__section-description">
+          <div class="rating-stars"><i class="fa-solid fa-star fa-2xs"></i><i class="fa-solid fa-star fa-2xs"></i><i
+              class="fa-solid fa-star fa-2xs"></i><i class="fa-solid fa-star fa-2xs"></i><i
+              class="fa-solid fa-star-half-stroke fa-2xs"></i>
+            <span class="tiny-text">4.4/4.5</span>
+          </div>
+          <p>This thinner, slant-tipped container provides ease of application once only dreamed of!</p>
+          <p>Nerdwax is a beeswax-based blend of All Natural and Certified Organic Ingredients specially formulated to
+            keep your glasses in place while you live your life.</p>
+          <p>Nerdwax works by creating a layer of friction between your glasses and your
+            skin. So it doesn’t matter what type of glasses you have, as long as they fit properly nerdwax will keep
+            them
+            in place! It’s also super easy to apply: Simply rub nerdwax on the nose pads of your favorite specs or
+            sunnies
+            and enjoy slip free bliss.</p>
+          <p>We pride ourselves in our commitment to using only the best All-Natural, Cosmetic
+            Grade Ingredients.</p>
+          <p>We use Certified Organic and Sustainably Sourced products whenever possible.</p>
+          <b>Ingredients: Beeswax, Coconut Oil, Gum Rosin</b>
+        </div>
+      </section>
+
+      <section class="preview__section" data-status="inactive">
+        <div class="preview-section-img img2"></div>
+        <div class="preview__section-description">
+          <div class="rating-stars"><i class="fa-solid fa-star fa-2xs"></i><i class="fa-solid fa-star fa-2xs"></i><i
+              class="fa-solid fa-star fa-2xs"></i><i class="fa-solid fa-star fa-2xs"></i><i
+              class="fa-solid fa-star-half-stroke fa-2xs"></i>
+            <span class="tiny-text">4.4/4.5</span>
+          </div>
+          <p>Nerdwax Magic Drops are guaranteed to provide a magical clean for your sunnies, specs, and screens!</p>
+          <p>Just
+            1-2 little drops of the magic formula and wipe clean with the included nerdwax Microfiber cloth.</p>
+          <p>Next thing
+            you know you’ll be singing to the heavens… oh oh it’s magic</p>
+          <b>Magic drops net wt. 0.17oz/5ml</b>
+          <b>Magic drops refill net wt. 2oz/59ml</b>
+        </div>
+      </section>
+
+      <section class="preview__section" data-status="inactive">
+        <div class="preview-section-img img3"></div>
+        <div class="preview__section-description">
+          <div class="rating-stars"><i class="fa-solid fa-star fa-2xs"></i><i class="fa-solid fa-star fa-2xs"></i><i
+              class="fa-solid fa-star fa-2xs"></i><i class="fa-solid fa-star fa-2xs"></i><i
+              class="fa-solid fa-star-half-stroke fa-2xs"></i>
+            <span class="tiny-text">4.4/4.5</span>
+          </div>
+          <p>Slap this baby onto one our Secretly Nerdy microfiber cloths, clip it to your bag, and you’re good to go!
+          </p>
+          <p>Holds on nice and tight so you don’t have to worry about losing your cloth.</p>
+        </div>
+      </section>
+
+      <section class="preview__section" data-status="inactive">
+        <div class="preview-section-img img4"></div>
+        <div class="preview__section-description">
+          <div class="rating-stars"><i class="fa-solid fa-star fa-2xs"></i><i class="fa-solid fa-star fa-2xs"></i><i
+              class="fa-solid fa-star fa-2xs"></i><i class="fa-solid fa-star fa-2xs"></i><i
+              class="fa-solid fa-star-half-stroke fa-2xs"></i>
+            <span class="tiny-text">4.4/4.5</span>
+          </div>
+          <p>There’s a lot of things you need to get across this universe. Warp drive… wormhole refractors…</p>
+          <p>You know the thing you need most of all? A blue herringbone cleaning cloth that will leave your spectacles
+            spick and span.</p>
+          <p>All Secretly Nerdy microfiber cloths are made from recycled plastic water bottles and guaranteed to remove
+            Nerdwax® from lenses.</p>
+          <b>Dimensions: 12” X 12”</b>
+        </div>
+      </section>
+
+    </article>
+  </main>
+</body>
+
+</html>

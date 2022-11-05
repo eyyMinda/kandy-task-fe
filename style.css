@@ -1,0 +1,400 @@
+@import "//db.onlinewebfonts.com/c/9da41c570d5a221cb2486d78769a076d?family=Neue+Helvetica";
+
+/* --------------Utilities and 'Reset'-------------- */
+
+:root {
+  --primary-color: #e8c61e;
+  --secondary-color: #050709;
+}
+
+*,
+html,
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+a,
+p,
+span,
+ul,
+li {
+  color: var(--secondary-color);
+  font: inherit;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+hr {
+  width: 100%;
+  height: 0;
+  margin: 10px 0;
+}
+
+/* Layout classes */
+
+header {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.container {
+  margin: 20px 0;
+}
+
+.row {
+  display: flex;
+  gap: 45px;
+  width: 100%;
+  margin: 20px auto;
+}
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column;
+    gap: 0;
+    text-align: center;
+  }
+}
+
+/* --------------Multi-use classes:--------------  */
+
+.rating-stars > i {
+  color: var(--primary-color);
+  margin-inline: 2px;
+}
+
+.tiny-text {
+  font-size: 0.7rem;
+  font-weight: 400;
+}
+
+.section-title {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 900;
+  letter-spacing: -1px;
+  margin-top: 5px;
+}
+
+.list > li {
+  font-size: 0.95rem;
+  font-weight: 400;
+  line-height: 17px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: start;
+  margin: 10px 0;
+}
+.list > li > i {
+  margin-right: 10px;
+}
+.list > li > b {
+  margin-left: 2px;
+}
+
+.btn {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 6px;
+  box-shadow: 0px 3px 6px #00000029;
+  width: 100%;
+  padding: 12px 0;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+.discounted {
+  color: var(--primary-color);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+/* --------------Rest of the classes:--------------  */
+
+.landing_left {
+  display: flex;
+  justify-content: flex-end;
+  background-color: var(--primary-color);
+  min-width: 50%;
+}
+.landing_left > img {
+  width: clamp(280px, 53vw, 540px);
+}
+@media (max-width: 936px) {
+  .landing > .landing_left {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .landing_left > img {
+    margin: auto;
+  }
+}
+
+.landing_right {
+  max-width: 340px;
+  margin-top: 10px;
+}
+@media (max-width: 800px) {
+  .landing_right {
+    margin: 0 auto;
+    padding-left: 20px;
+  }
+  .landing_right__description {
+    padding-left: 20px;
+  }
+  .landing_right__description,
+  .landing_right__description i,
+  .landing_right__description h1,
+  .landing_right__description .tiny-text,
+  .landing_right__description .list li {
+    color: #fff;
+    text-align: start;
+    max-width: 340px;
+    margin-inline: auto;
+  }
+  .landing_right > h2 {
+    margin-top: 10px;
+  }
+}
+
+.landing_right > h2 {
+  text-transform: uppercase;
+  text-align: start;
+  font-size: 1rem;
+  font-weight: 900;
+  letter-spacing: -1px;
+  margin-top: 30px;
+}
+.price {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-bottom: 12px;
+}
+
+.preview {
+  max-width: 1000px;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 56px;
+  position: relative;
+  overflow: hidden;
+}
+.preview > hr {
+  margin: 0 10px;
+  padding: 0;
+  width: 90%;
+}
+
+.dropdownNav .fa-circle-arrow-down {
+  position: absolute;
+  color: var(--primary-color);
+  right: 50px;
+  display: none;
+}
+.dropdownNav:not(.open) .fa-circle-arrow-down {
+  transform: rotate(0deg);
+  transition: transform 0.35s;
+  top: 70px;
+}
+.dropdownNav.open .fa-circle-arrow-down {
+  transform: rotate(180deg);
+  transition: transform 0.35s;
+  top: 26px;
+}
+
+@keyframes menuCollapse {
+  100% {
+    top: 80px;
+  }
+}
+.preview__nav {
+  display: flex;
+  gap: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.preview__nav li {
+  cursor: pointer;
+  letter-spacing: -1.5px;
+}
+.preview__nav li.active {
+  color: var(--primary-color);
+}
+.dropdownNav.open .preview__nav li {
+  display: block;
+}
+
+.dropdownNav {
+  align-self: center;
+}
+
+@media (max-width: 1000px) {
+  .dropdownNav {
+    cursor: pointer;
+    align-self: start;
+  }
+  .dropdownNav.open {
+    position: absolute;
+    z-index: 2;
+    width: calc(100% - 40px);
+    height: 200px;
+    top: -40px;
+    margin-inline: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: #0000000a 0px 3px 6px;
+    background-color: none;
+    animation: menuCollapse 0.25s ease-in-out forwards;
+  }
+  .dropdownNav .fa-circle-arrow-down {
+    display: block;
+  }
+  .preview__nav {
+    position: absolute;
+    top: 43px;
+    left: 40px;
+    display: flex;
+    flex-direction: column;
+    white-space: normal;
+    text-align: start;
+    padding: 20px 5px;
+    z-index: 1;
+  }
+  .dropdownNav.open .preview__nav {
+    top: 0;
+  }
+  .preview__nav li {
+    letter-spacing: -0.5px;
+  }
+  .preview__nav li:not(.active) {
+    display: none;
+  }
+}
+
+/* --------------Preview section-------------- */
+.preview .preview__section {
+  transition: opacity 400ms ease;
+  position: relative;
+}
+.preview > .preview__section[data-status="inactive"] {
+  position: absolute;
+  top: 100px;
+  opacity: 0;
+}
+.preview > .preview__section[data-status="active"] {
+  opacity: 1;
+}
+
+.preview .preview-section-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+  position: absolute;
+}
+
+.preview__section-description {
+  font-size: 0.9rem;
+  max-width: 350px;
+  margin: 110px 0;
+  transform: translateX(70%);
+}
+.preview__section-description p:nth-of-type(1) {
+  margin-top: 18px;
+}
+.preview__section-description p {
+  margin-bottom: 32px;
+}
+
+/* --------------Total Hard Coding - BEWARE! -------------- */
+.preview__section .img1 {
+  background-image: url("https://i.imgur.com/4Mz2JPm.jpg");
+  top: 30px;
+  left: -200px;
+  width: 700px;
+  height: 540px;
+}
+.preview__section .img2 {
+  background-image: url("https://i.imgur.com/IeHNyu0.jpg");
+  top: 25px;
+  left: -160px;
+  width: 650px;
+  height: 100%;
+}
+.preview__section .img3 {
+  background-image: url("https://i.imgur.com/RW26lo5.jpg");
+  top: 50px;
+  left: -250px;
+  width: 760px;
+  height: 280px;
+}
+.preview__section .img4 {
+  background-image: url("https://i.imgur.com/kLuQGk7.jpg");
+  top: 30px;
+  left: -350px;
+  width: 860px;
+  height: 440px;
+}
+
+@media (max-width: 1000px) {
+  .preview__section .img1 {
+    background-image: url("https://i.imgur.com/jpCO5Sp.jpg");
+    width: 200px;
+    height: 500px;
+    top: 100px;
+    left: -33vw;
+  }
+  .preview__section .img2 {
+    background-image: url("https://i.imgur.com/gUP2c9Y.jpg");
+    width: 130px;
+    height: 300px;
+    top: 80px;
+    left: -60px;
+  }
+  .preview__section .img3 {
+    background-image: url("https://i.imgur.com/BiPyiX5.jpg");
+    width: 400px;
+    height: 220px;
+    top: 50px;
+    left: 90px;
+  }
+  .preview__section .img4 {
+    background-image: url("https://i.imgur.com/R5EZjSE.jpg");
+    width: 160px;
+    height: 300px;
+    top: 90px;
+    left: -33vw;
+  }
+  .preview__section:nth-of-type(3) {
+    margin: 80px 20px;
+  }
+  .preview__section:nth-of-type(3) .preview__section-description {
+    padding: 0;
+    margin: 0 0 100px;
+  }
+  .preview__section-description {
+    font-size: 0.9rem;
+    max-width: auto;
+    margin: 100px auto;
+    transform: translateX(0%);
+    padding-left: 100px;
+    text-align: start;
+  }
+}
